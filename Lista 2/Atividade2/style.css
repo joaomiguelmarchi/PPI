@@ -1,0 +1,11 @@
+span:hover{
+    display: inline-block;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    box-shadow: 4px 2px 3px 1px rgb(213, 169, 230);
+    border: 1px solid black;
+    margin: 2px;
+    line-height: 40px;
+}

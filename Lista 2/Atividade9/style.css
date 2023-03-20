@@ -1,0 +1,14 @@
+#div1{
+    display: inline-block;
+    text-align: center;
+    background-color: red;
+    height: 130px;
+    width: 250px;
+    border: 1px solid black;
+    margin: 35px;
+    line-height: 120px;
+}
+
+#div1:hover{
+    box-shadow: 2px 2px 5px grey;
+}

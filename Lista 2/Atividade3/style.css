@@ -1,0 +1,51 @@
+span{
+    display: inline-block;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    box-shadow: 4px 2px 3px 1px rgb(213, 169, 230);
+    border: 1px solid black;
+    margin: 2px;
+    line-height: 40px;
+}
+
+#id1 span:first-child{
+    background-color: red;
+}
+
+#id2 span:last-child{
+    background-color: green;
+}
+
+#id3 span:nth-child(2){
+    background-color: blue;
+}
+
+#id4 span:nth-child(5){
+    background-color: rgb(212, 121, 212);
+}
+
+#id5 span:nth-child(odd){
+    background-color: yellow;
+}
+
+#id6 span:nth-child(even){
+    background-color: orange;
+}
+
+#id7 span:nth-child(4){
+    background-color: pink;
+}
+
+#id8 span:nth-child(2), #id8 span:nth-child(5){
+    background-color: brown;
+}
+
+#id9 span:nth-child(1), #id9 span:nth-child(4){
+    background-color: grey;
+}
+
+#id10 span:nth-child(4), #id10 span:nth-child(5), #id10 span:nth-child(6){
+    background-color: purple;
+}

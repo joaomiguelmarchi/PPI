@@ -1,0 +1,36 @@
+.square {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-right: 50px;
+    margin-top: 20px;
+  }
+
+  .square:hover {
+    transform: rotate(360deg);   
+    transition: transform 1.5s;
+  }
+
+  .square:first-child {
+    background-color: yellow;
+  }
+
+  .square:nth-child(2) {
+    background-color: aqua;
+  }
+
+  .square:nth-child(3) {
+    background-color: greenyellow;
+  }
+
+  .square:nth-child(4) {
+    background-color: fuchsia;
+  }
+  
+  .square:nth-child(5) {
+    background-color: darkturquoise;
+  }
+
+  .square:nth-child(6) {
+    background-color: coral;
+  }

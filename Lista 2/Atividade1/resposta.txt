@@ -1,0 +1,11 @@
+1- <p>Lorem-1</p> = Vermelho (Como não tem classe ou id, prioriza a tag style, ignorando o arquivo css)
+
+2- <p style="color:black">Lorem-2</p> = preto (prioriza a cor informada na tag, ignorando a tag style e o arquivo css)
+
+3- <p id="p3">Lorem-3</p> = azul (prioriza o id, que é informado na própria tag e estilizado no arquivo css, ignorando a tag style e outras estilizações do arquivo css)
+
+4- <p class="class1">Lorem-4</p> = amarelo (prioriza a classe, que é informada na própria tag e estilizado no arquivo css, ignorando a tag style e outras estilizações do arquivo css)
+
+5- <p id="p3" class="class1" >Lorem-5</p> = laranja (prioriza a classe + o id informados na própria tag, e ignorando quaisquer outras estilizações (se a estilização classe + id não existisse, iria priorizar o id))
+
+6- <p >Lorem-6</p> = Vermelho (Como não tem classe ou id, prioriza a tag style, ignorando o arquivo css)
