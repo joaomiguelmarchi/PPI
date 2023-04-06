@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+  }
+  
+  .column1 {
+    width: 300px;
+    background-color: yellow;
+  }
+  
+  .column2 {
+    flex: 1; 
+    background-color: blue;
+  }
+  

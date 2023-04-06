@@ -1,0 +1,5 @@
+2-Sua exibição ficou em linha.
+
+3-Com apenas a propriedade flex, as divs e os spans são apertados
+ para caber na mesma linha, já com o flex wrap eles são encaixados em linhas diferentes
+ abaixo a linha principal.

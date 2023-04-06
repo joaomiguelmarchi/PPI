@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.div1, .div2, .div3, .span1, .span2, .span3{
+     border: 1px solid black;   
+     height: 100px;
+     width: 100px;
+}
