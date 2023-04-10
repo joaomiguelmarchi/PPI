@@ -1,0 +1,36 @@
+.container{
+    display:  grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-areas:
+    "azul2 azul2 azul2 azul2"
+    "roxo verde verde verde"
+    "roxo verde verde verde"
+    "azul azul azul azul";
+}
+
+.box{
+    margin: 2px;
+}
+
+.content{
+    background-color: green;
+    grid-area: verde;
+}
+
+.menu{
+    background-color: purple;
+    grid-area: roxo;
+}
+
+.header{
+    background-color: lightskyblue;
+    grid-area: azul2;
+}
+
+.footer{
+     background-color: darkblue;
+    grid-area: azul;
+    height: 20vh;
+}
+

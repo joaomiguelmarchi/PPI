@@ -2,3 +2,20 @@
     display: flex;
     flex-direction: column;
 }
+
+.linha{
+    display: flex;
+    margin: 5px;
+}
+
+.box1{
+    width: 150px;
+    background-color: red;
+    margin: 2px;
+}
+
+.box2{
+    flex: 1;
+    background-color: blue;
+    margin: 2px;
+}

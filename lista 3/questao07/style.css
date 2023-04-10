@@ -1,0 +1,46 @@
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.fundo{
+    width: 400px;
+    height: 500px;
+    display: flex;
+    background-color: grey;
+    margin: 10px;
+}
+
+.tela{
+    margin: 10px;
+    height: 200px;
+    width: 400px;
+    background-color: rgb(186, 183, 183);
+}
+img{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    left: 115px;
+}
+
+.galo{
+    left: 540px;
+    height: 200px;
+    width: 200px;
+}
+
+.fortal{
+    left: 960px;
+    height: 200px;
+    width: 200px;
+}
+
+.chape{
+    left: 1380px;
+}
+
+.figuera{
+    left: 1380px;
+}

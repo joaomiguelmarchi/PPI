@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+div{
+    width: 150px;
+    height: 150px;
+}
+.div1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+}
+
+.div2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: grey;
+}
+
+.div3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: green;
+}
+
+.div4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: purple;
+}
+
+.div5 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: yellow;
+}
