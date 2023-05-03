@@ -1,0 +1,62 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(vasco.png);
+}
+
+.container{
+    display:  grid;
+    height: 98vh;
+    width: 98vw;
+    grid-template-areas:
+    "header header header header"
+    "left content content content"
+    "footer footer footer footer";
+}
+
+.box{
+    margin: 2px;
+}
+
+.content{
+    background-color: grey;
+    grid-area: content;
+    height: 600px;  
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.chat{
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+input{
+    height: 100px;
+    width: 500px;
+}
+
+button{
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+}
+
+.left{
+    background-color: orange;
+    grid-area: left;
+    height: 600px; 
+}
+
+.header{
+    background-color: blue;
+    grid-area: header;
+    height: 170px;
+}
+
+.footer{
+     background-color: green;
+    grid-area: footer;
+    height: 150px;
+}

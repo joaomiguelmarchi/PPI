@@ -1,0 +1,5 @@
+Explique o que são seletores CSS  e de forma prática exemplificque os diferentes tipos de seletores. 
+
+Seletores css são elementos css que indicam quais elementos html irão receber as estilzações que são indicadas dentro do proprio css.
+
+Ex: seletores por classe, seletores por id e seletores globais.

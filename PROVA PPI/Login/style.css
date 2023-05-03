@@ -1,0 +1,45 @@
+   .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 300px;
+            height: 180px;
+            border: 1px solid rgba(0, 0, 0, 0.3)
+        }
+
+        .p {
+            position: absolute;
+            bottom: 20.5rem;
+            left: 8em;
+            background: rgba(0, 0, 0, 0.08);
+        }
+
+        .texto1 {
+            display: flex;
+            align-items: center;
+            margin-left: 16px;
+
+        }
+
+        .texto2 {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+        }
+
+        button {
+            margin-top: 10px;
+            margin-left: 45px;
+            width: 60px;
+            height: 30px;
+        }
+
+        body{
+            height: 70vh;
+            border: 10px solid black;
+            padding-top: 200px;
+        }
