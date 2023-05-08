@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 9</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container_input">
+        <input type="text" id="textInsert">
+        <button id="btnAdd">ADD</button>
+    </div>
+    <ul id="listItem"></ul>
+
+</body>
+<script>
+    const textInsert = document.getElementById("textInsert");
+    const btnAdd = document.getElementById("btnAdd");
+    const listItem = document.getElementById("listItem");
+
+    btnAdd.addEventListener("click", function () {
+        const textoItem = textInsert.value.trim();
+
+        if (textoItem !== "") {
+            const novoItem = document.createElement("li");
+            novoItem.innerText = textoItem;
+
+            const bt_remove = document.createElement("button");
+            bt_remove.innerText = "REMOVE";
+            bt_remove.addEventListener("click", function () {
+                listItem.removeChild(novoItem);
+            });
+
+            novoItem.appendChild(bt_remove);
+            listItem.appendChild(novoItem);
+
+            textInsert.value = "";
+        }
+    });
+</script>
+</html>

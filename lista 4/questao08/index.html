@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 08</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <label>Temperatura:</label>
+        <input type="number" id="temp">
+        <select id="uni">
+            <option value="Celsius">Celsius</option>
+            <option value="Kelvin">Kelvin</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+        </select>
+        <button onclick="convertertemp()">Converter</button>
+    </div>
+
+    <div id="resultado"></div>
+
+    <script>
+        const divResultado = document.getElementById("resultado");
+        const Temperatura = document.getElementById("temp").value;
+        let resultado;
+
+        function convertertemp() {
+            const temp = parseFloat(Temperatura);
+            const uni = document.getElementById("uni").value;
+            if (uni === "Celsius") {
+                resultado = `${temp}°C = ${(temp * 1.8) + 32} °F = ${temp + 273.15}K`;
+            } else if (uni === "Fahrenheit") {
+                resultado = `${temp}°F = ${(temp - 32) / 1.8} °C = ${(temp + 459.67) * 5 / 9}K`;
+            } else if (uni === "Fahrenheit") {
+                resultado = `${temp}K = ${temp - 273.15} °C = ${(temp * 9 / 5) - 459.67}°F`;
+            }
+
+            if(temp === null){
+                resultado = "";
+            }
+
+            divResultado.textContent = resultado;
+        }
+    </script>
+</body>
+
+</html>
