@@ -1,5 +1,5 @@
-<?php
- include('conexao.php');
+<?php 
+include('conexao.php');
 
 if(isset($_POST['email']) || isset($_POST['senha'])){
     
@@ -12,7 +12,8 @@ if(isset($_POST['email']) || isset($_POST['senha'])){
     } else if(strlen($senha) == 0){
         echo "<script>alert('Preencha sua senha');</script>";
     }else{
-          verificaLoginSenha($email, $senha);
+          insereUsuario($email, $senha);
+          header('Location: index.php');
     }
 
 }
@@ -23,12 +24,11 @@ if(isset($_POST['email']) || isset($_POST['senha'])){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Cadastrar</title>
 </head>
 <style>
-    body{
+   body{
         height: 98vh;
         width: 98vw;
         background-color: lightblue;
@@ -72,8 +72,8 @@ if(isset($_POST['email']) || isset($_POST['senha'])){
     }
 </style>
 <body>
-    <div id="form">
-        <h1>ACESSE SUA CONTA</h1>
+<div id="form">
+        <h1>Insira suas credenciais</h1>
         <form action="" method="POST">
             <p id="email">
                 <label for="email">E-mail</label>  
@@ -84,8 +84,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])){
                 <input type="password" name="senha"> 
             </p>
             <div id="botoes">
-                 <button type="submit">Entrar</button>
-                 <a id="sign" href="cadastro.php">Inscrever-se</a>
+                 <button type="submit">Cadastrar</button>
             </div>
         </form>
     </div> 
