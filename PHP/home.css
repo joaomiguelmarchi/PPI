@@ -1,0 +1,11 @@
+body{
+    height: 98vh;
+    width: 98vw;
+    background-color: lightblue;
+}
+div{
+    display: flex;
+    width: 500px;
+    justify-content: start;
+    flex-direction: row;
+}

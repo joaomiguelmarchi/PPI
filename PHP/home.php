@@ -4,19 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
     <title>Home</title>
+    <link rel="stylesheet" href="home.css">
 </head>
-<style>
-    body{
-        background-color: lightblue;
-    }
-    #search-box{
-        display: flex;
-        width: 300px;
-        flex-direction: row;
-    }
-</style>
 <body>
 <main>
 
@@ -33,7 +23,9 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>  
+
+    <div class="lista"> 
     </form> 
         <tr>
             <th>Code</th>
@@ -41,6 +33,7 @@
             <th>Senha</th>
             <th>Ações</th>
         </tr>
+
         <?php
 include_once "conexao.php";
 session_start();
@@ -87,6 +80,11 @@ if (isset($_SESSION['resultado'])) {
 ?>
 
     </table> 
+
+
+        <a href="criar.php">Adicionar++</a>  
+    </div>
+    
 </main>
 
     
