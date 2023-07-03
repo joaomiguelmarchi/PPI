@@ -1,10 +1,10 @@
 <?php
 
 function conectaBD(){
-    $usuario = 'root';
-    $senha = '170205joao';
-    $database = 'PPI';
-    $host = 'localhost';
+    $usuario = '';
+    $senha = '';
+    $database = '';
+    $host = '';
 
     $con=new PDO("mysql:host=$host;dbname=$database","$usuario","$senha");
 
